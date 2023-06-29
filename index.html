@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 page - crimson</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="header-container">
+        <div class="header">
+          <span>4</span>
+          <span>0</span>
+          <span>4</span>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Seems you are lost, come back <u>Home</u></span>
+        <div class="footer-wrapper"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    gsap.from(".navbar > div", 1.6, {
+      opacity: 0,
+      y: 60,
+      ease: Expo.easeInOut,
+      delay: 2.4,
+    });
+    gsap.from(".site-logo", 1.6, {
+      opacity: 0,
+      y: 40,
+      ease: Expo.easeInOut,
+      delay: 2.4,
+    });
+    gsap.from(".header > span", 1.5, {
+      top: "-100vh",
+      ease: "bounce.out",
+      delay: 1,
+      stagger: 0.2,
+    });
+    gsap.to(".footer span", 0.4, {
+      y: -40,
+      ease: Expo.easeInOut,
+      delay: 2.4,
+    });
+  </script>
+</html>

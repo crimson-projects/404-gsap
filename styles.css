@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #fff;
+}
+
+.site-logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Grifinito L";
+  font-size: 2.4em;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Space Grotesk";
+  line-height: 100px;
+}
+
+.site-menu {
+  display: flex;
+  font-size: 1em;
+}
+
+.menu-item {
+  margin-left: 60px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.header-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > span {
+  font-family: "Maelstrom Sans";
+  font-size: 40vw;
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  bottom: 5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer span {
+  position: relative;
+  top: 30px;
+  text-decoration: none;
+  font-family: "Space Grotesk", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+  transition: 1s;
+}
+
+.footer-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background: #fff;
+  margin: 0 auto;
+  transition: 1s;
+}
